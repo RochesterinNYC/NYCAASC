@@ -1,0 +1,252 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+    <h2>NYCAASC Board</h2>
+    <ul class="committeelist">
+        <li>Directors
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('dchengbio')">David Cheng</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('bdumondbio')">Ben Dumond</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('jkoobio')">Julia Koo</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('jlouiebio')">Jeff Louie</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('etruongbio')">Elaine Truong</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('awangbio')">Alan Wang</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('mwubio')">Maple Wu</a></li>
+            </ul>
+        </li>
+        <li>Associate Director
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('blowebio')">Brennan Lowe</a></li>
+            </ul>
+        </li>
+        <li>Events
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('fhuynhbio')">Francesca Huynh</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('jkoobio')">Julia Koo</a></li>
+            </ul>
+        </li>
+        <li>Fundraising
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('dchengbio')">David Cheng</a><li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('etruongbio')">Elaine Truong</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('wyangbio')">Wai Yang</a></li>
+            </ul>
+        </li>   
+        <li>Logistics
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('tlibio')">Thomas Li</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('anawroziebio')">Aziz Nawrozie</a></li>
+            </ul>
+        </li>   
+        <li>Public Relations
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('schinbio')">Steph Chin</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('bdumondbio')">Ben Dumond</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('jlouiebio')">Jeff Louie</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('llibio')">Leah Li</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('sqinbio')">Shirley Qin</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('kwongbio')">Kayla Wong</a></li>
+            </ul>
+        </li>  
+        <li>Treasurer
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('kwongbio')">Kayla Wong</a></li>
+            </ul>
+        </li>
+        <li>Volunteer and Registration
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('awangbio')">Alan Wang</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('fzhengbio')">Fiona Zheng</a></li>
+            </ul>
+        </li>
+        <li>Webmaster
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('jwenbio')">James Wen</a></li>
+            </ul>
+        </li>
+        <li>Workshops
+            <ul>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('pchengbio')">Patrick Cheng</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('blowebio')">Brennan Lowe</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('olubio')">Olivia Lu</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('izsbio')">Ilana Zucker-Scharff</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('sseidbio')">Samantha Seid</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('atakadabio')">Anna Takada</a></li>
+                <li><a href="javascript:void(0)" onmouseover="seeBio('mwiryadibio')">Michelle Wiryadi</a></li>
+            </ul>
+        </li>
+</ul>
+<div class="infoblock">
+	<div class="bio" id="mainbio">
+		Meet the NYCAASC Team!
+	</div>
+	<div class="bio" id="dchengbio">
+		<img class="bioimg" src="/static/img/dcheng.jpg">
+		<div class="biotext">
+			<h4>David Cheng</h4><br/>
+			<p>David's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="bdumondbio">
+		<!--<img class="bioimg" src="/static/img/bdumond.jpg"><br/>-->
+		<div class="biotext">
+			<h4>Ben Dumond</h4><br/>
+			<p>Ben's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="jkoobio">
+		<!--<img class="bioimg" src="/static/img/jkoo.jpg"><br/>-->
+		<div class="biotext">
+			<h4>Julia Koo</h4><br/>
+			<p>Julia's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="jlouiebio">
+		<!--<img class="bioimg" src="/static/img/jlouie.jpg"><br/>-->
+		<div class="biotext">
+			<h4>Jeff Louie</h4>
+			<p>Jeff's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="etruongbio">
+		<img class="bioimg" src="/static/img/etruong.jpg">
+		<div class="biotext">
+			<h4>Elaine Truong</h4><br/>
+			<p>Elaine's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="awangbio">
+		<img class="bioimg" src="/static/img/awang.jpg">
+		<div class="biotext">
+			<h4>Alan Wang</h4><br/>
+			<p>Alan's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="mwubio">
+		<img class="bioimg" src="/static/img/mwu.jpg">
+		<div class="biotext">
+			<h4>Maple Wu</h4><br/>
+			<p>Maple's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="blowebio">
+		<img class="bioimg" src="/static/img/blowe.jpg">
+		<div class="biotext">
+			<h4>Brennan Lowe</h4><br/>
+			<p>Brennan's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="fhuynhbio">
+		<img class="bioimg" src="/static/img/fhuynh.jpg">
+		<div class="biotext">
+			<h4>Francesca Huynh</h4><br/>
+			<p>Francesca's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="wyangbio">
+		<img class="bioimg" src="/static/img/wyang.jpg">
+		<div class="biotext">
+			<h4>Wai Yang</h4><br/>
+			<p>Wai's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="tlibio">
+		<img class="bioimg" src="/static/img/tli.jpg">
+		<div class="biotext">
+			<h4>Thomas Li</h4><br/>
+			<p>Thomas's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="anawroziebio">
+		<img class="bioimg" src="/static/img/anawrozie.jpg">
+		<div class="biotext">
+			<h4>Aziz Nawrozie</h4><br/>
+			<p>Aziz's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="schinbio">
+		<!--<img class="bioimg" src="/static/img/schin.jpg">-->
+		<div class="biotext">
+			<h4>Steph Chin</h4><br/>
+			<p>Steph's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="llibio">
+		<!--<img class="bioimg" src="/static/img/lli.jpg">-->
+		<div class="biotext">	
+			<h4>Leah Li</h4><br/>
+			<p>Leah's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="sqinbio">
+		<img class="bioimg" src="/static/img/sqin.jpg">
+		<div class="biotext">
+			<h4>Samantha Qin</h4><br/>
+			<p>Shirley's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="kwongbio">
+		<img class="bioimg" src="/static/img/kwong.jpg">
+		<div class="biotext">
+			<h4>Kayla Wong</h4><br/>
+			<p>Kayla's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="fzhengbio">
+		<!--<img class="bioimg" src="/static/img/fzheng.jpg">-->
+		<div class="biotext">
+			<h4>Fiona Zheng</h4><br/>
+			<p>Fiona's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="jwenbio">
+		<!--<img class="bioimg" src="/static/img/jwen.jpg">-->
+		<div class="biotext">
+			<h4>James Wen</h4><br/>
+			<p>James's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="pchengbio">
+		<!--<img class="bioimg" src="/static/img/pcheng.jpg">-->
+		<div class="biotext">
+			<h4>Patrick Cheng</h4><br/>
+			<p>Patrick's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="olubio">
+		<!--<img class="bioimg" src="/static/img/olu.jpg">-->
+		<div class="biotext">
+			<h4>Olivia Lu</h4><br/>
+			<p>Olivia's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="izsbio">
+		<!--<img class="bioimg" src="/static/img/izs.jpg">-->
+		<div class="biotext">
+			<h4>Ilana Zucker-Scharff</h4><br/>
+			<p>Ilana's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="sseidbio">
+		<img class="bioimg" src="/static/img/sseid.jpg">
+		<div class="biotext">
+			<h4>Samantha Seid</h4><br/>
+			<p>Samantha's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="atakadabio">
+		<!--<img class="bioimg" src="/static/img/atakada.jpg">-->
+		<div class="biotext">	
+			<h4>Anna Takada</h4><br/>
+			<p>Anna's Bio</p>
+		</div>
+	</div>
+	<div class="bio" id="mwiryadibio">
+		<!--<img class="bioimg" src="/static/img/mwiryadi.jpg">-->
+		<div class="biotext">	
+			<h4>Michelle Wiryadi</h4><br/>
+			<p>Michelle's Bio</p>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NYCAASC 2013</title>
+        <link rel="stylesheet" href="/static/css/qq.css">
+        <script type="text/javascript" src="/static/js/nycaasc.js"></script>
+    </head>
+
+    <body onload="makeColor()">
+        <div class = "bgimg"></div> 
+        <div class = "sidebar">
+            <div class="placeholder"></div>
+            <a href="{{ url_for('home') }}"><img class="sideimg" src="/static/img/text1.jpg" /></a>
+            <div class="socialbar">
+                <a href="https://www.facebook.com/nycaascpage?ref=ts&fref=ts" target="_blank"><img class="socialimg" src="/static/img/facebook.png" /></a>
+                <a href="https://twitter.com/NYCAASC" target="_blank"><img class="socialimg" src="/static/img/twitter.png" /></a> 
+            </div>
+            <ul class = "menu" onmouseout="makeColor()">
+                <li><a onmouseover="makeLinkColor('homelink')" onmouseout="makeWhite()" id="homelink" href="{{ url_for('home') }}">HOME</a></li>
+                <li><a onmouseover="makeLinkColor('aboutlink')" onmouseout="makeWhite()" id="aboutlink" href="{{ url_for('about') }}">ABOUT</a></li>
+                <li><a onmouseover="makeLinkColor('historylink')" onmouseout="makeWhite()" id="historylink" href="{{ url_for('history') }}">HISTORY</a></li>
+                <li><a onmouseover="makeLinkColor('committeelink')" onmouseout="makeWhite()" id="committeelink" href="{{ url_for('committee') }}">COMMITTEE</a></li>
+                <li><a onmouseover="makeLinkColor('schedulelink')" onmouseout="makeWhite()" id="schedulelink" href="{{ url_for('schedule') }}">SCHEDULE</a></li>
+                <li><a onmouseover="makeLinkColor('sponsorslink')" onmouseout="makeWhite()" id="sponsorslink" href="{{ url_for('sponsors') }}">SPONSORS</a></li>
+                <li><a onmouseover="makeLinkColor('contactlink')" onmouseout="makeWhite()" id="contactlink" href="{{ url_for('contact') }}">CONTACT</a></li>
+                <li><a onmouseover="makeLinkColor('registerlink')" onmouseout="makeWhite()" id="registerlink" href="{{ url_for('register') }}">REGISTER</a></li> 
+            </ul>
+        </div>
+
+        <div class = "content">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </body>
+
+</html>
